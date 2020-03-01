@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+lifetime_randomness = 0.5
+emission_shape = 1
+emission_sphere_radius = 0.01
+flag_disable_z = true
+spread = 155.57
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 14.29
+initial_velocity_random = 0.51
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 5.0
+hue_variation = 0.2
+hue_variation_random = 0.5
+
+[node name="FireExplosionParticle" type="Particles2D"]
+position = Vector2( 51.0488, 38.1118 )
+emitting = false
+one_shot = true
+speed_scale = 4.0
+explosiveness = 0.75
+process_material = SubResource( 1 )
